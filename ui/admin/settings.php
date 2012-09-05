@@ -88,7 +88,7 @@
         <p><?php _e( 'This tool does not delete any Pods 1.x data, it simply resets the Pods 2.0 settings, removes all of it\'s data, and performs a fresh install.', 'pods' ); ?></p>
 
         <p class="submit">
-            <?php $confirm = __( 'Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 2.0, resetting it to a clean first install.', 'pods' ); ?>
+            <?php $confirm = __( "Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 2.0, resetting it to a clean first install.", 'pods' ); ?>
             <input type="submit" class="button button-primary" name="reset" value="<?php esc_attr_e( 'Reset Pods 2.0 settings and data', 'pods' ); ?>" onclick="return confirm( '<?php echo esc_js( $confirm ); ?>' );" />
         </p>
 
@@ -103,7 +103,7 @@
             <p><?php _e( 'This tool will delete all of your Pods 1.x data, it\'s only recommended if you\'ve verified your data has been properly migrated into Pods 2.0.', 'pods' ); ?></p>
 
             <p class="submit">
-                <?php $confirm = __( 'Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 1.x, resetting it to a clean first install.', 'pods' ); ?>
+                <?php $confirm = __( "Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 1.x, resetting it to a clean first install.", 'pods' ); ?>
                 <input type="submit" class="button button-primary" name="cleanup" value="<?php esc_attr_e( 'Delete Pods 1.x settings and data', 'pods' ); ?>" onclick="return confirm( '<?php echo esc_js( $confirm ); ?>' );" />
             </p>
         <?php
@@ -116,7 +116,7 @@
         <p><?php _e( 'This tool will delete Pods 2.0 settings, data, and deactivate itself once done. Your database will be as if Pods 2.0 never existed.', 'pods' ); ?></p>
 
         <p class="submit">
-            <?php $confirm = __( 'Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 2.0 with no turning back.', 'pods' ); ?>
+            <?php $confirm = __( "Are you sure you want to do this?\n\nThis is a good time to make sure you have a backup. We are deleting all of the data that surrounds 2.0 with no turning back.", 'pods' ); ?>
             <input type="submit" class="button button-primary" name="reset_deactivate" value=" <?php esc_attr_e( 'Deactivate and Delete Pods 2.0 data', 'pods' ); ?>" onclick="return confirm( '<?php echo esc_js( $confirm ); ?>' );" />
         </p>
 
